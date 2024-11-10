@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Towers of Hanoi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Towers of Hanoi</h1>
+    <div class="controls">
+      <input type="number" id="diskCount" placeholder="Number of Disks" min="1" max="10" value="3" aria-label="Enter the number of disks">
+      <button onclick="startGame()" aria-label="Start the game">Start Game</button>
+      <label for="speedControl" class="speed-label">Animation Speed:</label>
+      <input type="range" id="speedControl" min="100" max="1500" value="800" step="100" aria-label="Set animation speed">
+    </div>
+    <div class="towers">
+      <div class="rod" id="rodA"></div>
+      <div class="rod" id="rodB"></div>
+      <div class="rod" id="rodC"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
